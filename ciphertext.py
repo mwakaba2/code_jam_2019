@@ -43,7 +43,7 @@ def get_selected_primes(prime_lst, min_p, max_p, sorted_lst):
         for j in range(i, len(prime_lst)):
             a, b = prime_lst[i], prime_lst[j]
             product = a * b
-            if min_p <= product and product <= max_p:
+            if min_p <= product <= max_product:
                 if in_values(sorted_lst, product):
                     values_dictionary[product] = (a, b)
                     final_primes.update({a, b})
